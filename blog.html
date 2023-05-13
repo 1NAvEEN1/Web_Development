@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+
+	<img src="lg.png" class="logo">
+	<h1><div class="h1col">Lambhorgini </div>Lovers</h1>
+
+ <!-- Slideshow container -->
+<div class="slideshow-container fade">
+
+  <!-- Full images with numbers and message Info -->
+  <div class="Containers">
+    <img src="2.jpg" style="width:100%">
+  </div>
+
+  <div class="Containers">
+    <img src="i.jpg" style="width:100%">
+  </div>
+
+  <div class="Containers">
+    <img src="l.jpg" style="width:100%">
+  </div>
+
+  <!-- Back and forward buttons -->
+  <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The circles/dots -->
+<div style="text-align:center">
+  <span class="dots" onclick="currentSlide(1)"></span>
+  <span class="dots" onclick="currentSlide(2)"></span>
+  <span class="dots" onclick="currentSlide(3)"></span>
+</div>
+
+<video width="100%" controls autoplay>
+		<source src="home.mp4" type="video/mp4">
+</video>
+
+<h2>Capture it if you can</h2>	
+
+
+
+            <div id ="myAnimation">
+                <img id="car" src="car.png"  onclick="myMove();" width="65%">  
+            </div>
+ 
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+   <tr>
+        <td>
+           <div>
+             <button type="button" onclick="increase()">Zoom In</button>
+ <button type="button" onclick="decrease()">Zoom Out</button>   
+</div> 
+        </td>
+
+    </tr>
+
+</table>
+
+
+<br><br><br>
+
+
+<br>
+<div style="position: relative; margin: auto;">
+  <img src="t.jpg" id="myImg">  
+</div>
+
+
+<br><br><br>
+
+<table id="cus">
+    <caption style="color:white">Contact Us</caption>
+    <tr>
+        <td><label for="nameL">Name</label></td>
+        <td><input id="name" type="text" placeholder="Enter Name here" /></td>
+    </tr>
+    <tr>
+        <td><label for="emailL">Email Address</label></td>
+        <td><input id="email" type="text" placeholder="Enter E mail address here" /></td>
+    </tr>
+    <tr>
+        <td><label for="teleL">Telephone</label></td>
+        <td><input id="tel" type="text" placeholder="Enter Telephone Number here" /></td>
+    </tr>
+
+    <tr>
+        <td>
+            <input type="submit" value="Reset" class="btn" onclick="clearFunc();" />
+        </td>
+        <td>
+            <input type="reset" value="Contact Us" class="btn" onclick="validate();" />
+        </td>
+    </tr>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>

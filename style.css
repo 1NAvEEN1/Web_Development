@@ -1,0 +1,135 @@
+body {
+	background-color: black;
+	font-family: Tahoma;
+}
+
+h1 {
+	font-size: 90px;
+	font-family: Tahoma;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+	color: white;
+}
+
+.h1col {
+	color: gold;
+	display: inline;
+}
+
+.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 150px;
+	margin-top: 40px;
+}
+
+	  #myAnimation {
+        position: absolute;
+      
+    }	
+
+		* {box-sizing:border-box;}
+
+		/* Slideshow container */
+		.slideshow-container {
+		  max-width: 60%;
+		  position: relative;
+		  margin: auto;
+		}
+
+		/* Make the images invisible by default */
+		.Containers {
+		  display: none;
+		}
+
+		/* forward & Back buttons */
+		.Back, .forward {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 48%;
+		  width: auto;
+		  margin-top: -23px;
+		  padding: 17px;
+		  color: grey;
+		  font-weight: bold;
+		  font-size: 19px;
+		  transition: 0.4s ease;
+		  border-radius: 0 5px 5px 0;
+		  user-select: none;
+		}
+
+		/* Place the "forward button" to the right */
+		.forward {
+		  right: 0;
+		  border-radius: 4px 0 0 4px;
+		}
+
+		/*when the user hovers,add a black background with some little opacity */
+		.Back:hover, .forward:hover {
+		  background-color: rgba(0,0,0,0.8);
+		}
+
+
+		/* The circles or bullets and indicators */
+		.dots {
+		  cursor: pointer;
+		  height: 16px;
+		  width: 16px;
+		  margin: 0 3px;
+		  background-color: #acc;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.5s ease;
+		}
+
+		.enable, .dots:hover {
+		  background-color: #717161;
+		}
+
+input[type=text] { 
+		  box-sizing: content-box; 
+		  width: 300px;  
+		  padding: 15px;  
+		  margin: 5px 0 0px 0;  
+		  display: inline-block;  
+		  border: none;  
+		  border-radius: 5px;
+		  background: #f1f1f1;  
+		}
+
+		button {
+            background-color: gold;
+            width: auto;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 4px;
+        }
+
+        caption {
+        	font-family: Tahoma;
+        	color: white;
+        	font-size: 35px;
+        }
+		#cus {
+			background-color: #ABB2B9;
+			margin-left: auto;
+ 			margin-right: auto;
+ 			border-radius: 10px;
+ 			padding: 10px;
+		}
+       /* td {
+		  padding-top: 10px;
+		  padding-bottom: 10px;
+		  padding-left: 10px;
+		  padding-right: 10px;
+		  border-radius: 10px;		}*/
+
+
+		label {
+			color: #641E16;
+			font-size: 20px;
+			font-weight: 600;
+		}
