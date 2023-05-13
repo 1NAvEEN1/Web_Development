@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Registration Form</title>
+
+	<link rel="icon" href="logo.png" type="image/icon type">
+
+	<style type="text/css">
+		body {
+			background-image: url("bg.jpg");
+			background-repeat: no-repeat;
+            background-size: 100%;
+            
+			background-color: #EAECEE ;
+			font-family: Calibri, Helvetica, sans-serif; 
+		}
+
+		.logo {
+			width: 7%;
+			position: absolute;
+			top: 1%;
+			right: 1%;
+		}
+
+		h1 {
+			text-align: center;
+			font-size: 50px;
+			color: #7B241C ;
+			font-style: italic;
+		}
+
+		input[type=text] { 
+		  box-sizing: content-box; 
+		  width: 300px;  
+		  padding: 15px;  
+		  margin: 5px 0 0px 0;  
+		  display: inline-block;  
+		  border: none;  
+		  border-radius: 5px;
+		  background: #f1f1f1;  
+		}
+
+		button {
+			color: white;
+            background-color: #943126;
+            width: auto;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 4px;
+        }
+		table {
+			background-color: #ABB2B9;
+			margin-left: auto;
+ 			margin-right: auto;
+ 			border-radius: 10px;
+ 			padding: 10px;
+		}
+        td {
+		  padding-top: 10px;
+		  padding-bottom: 10px;
+		  padding-left: 10px;
+		  padding-right: 10px;
+		  border-radius: 10px;		}
+
+		
+
+		label {
+			color: #641E16;
+			font-size: 20px;
+			font-weight: 600;
+		}
+
+		.colorblue {
+			background-color: lightblue;
+		}
+	</style>
+</head>
+
+
+<body>
+	<img src="logo.png" class="logo">
+	<br><br><br><br>
+
+	<h1>Registration Form</h1>
+
+<form>
+	<table>
+		<tr>
+			<td class="colorblue"><label>Name</label></td>
+			<td><input type="text" placeholder="Enter Your Name" name="Name"/><br></td>
+		</tr>
+		<tr>
+			<td class="colorblue"><label>Registration Year</label></td>
+            <td><input type="text" placeholder="Enter Your Ragistration Year Ex:'2019/2020'" name="Year"/><br></td>
+        </tr>
+        <tr>
+			<td class="colorblue"><label>Registration Semester</label></td>
+			<td>
+                	<label for="Semester">1</label>
+                    <input type="radio" name="Semester" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="Semester">2</label>
+                    <input type="radio" name="Semester" />
+            </td>
+            <td>
+            	
+            </td>
+        </tr>
+        <tr>
+        	<td class="colorblue"><label>Student Photo</label></td>
+        	<td><input type="file" id="img" name="img" accept="image/*"></td>
+        </tr>
+        <tr>
+        	<td class="colorblue"><label>Email</label></td>
+        	<td><input type="text" placeholder="Enter Your Email Ex:'email@email.com'" name="Email"/><br></td>
+        </tr>
+        <tr>
+        	<td class="colorblue"><label>Phone Number</label></td>
+        	<td><input type="text" placeholder="Enter Your Phone Number" name="Number"/><br></td>
+        </tr>
+        <tr>
+        	<td class="colorblue"><label>Degree Programme</label></td>
+        	<td><input type="text" placeholder="Enter Your Degree Programme" name="Degree"/><br></td>
+        </tr>
+        <tr>
+        	<td class="colorblue"><label>Department</label></td>
+        	<td>
+        		<select id="Department">
+					<option>Industrial Management</option>
+					<option>Physics</option>
+					<option>Microbiology</option>
+					<option>Chemisty</option>
+					<option>Statistics & Computer Science</option>
+				</select>
+		</td>
+        </tr>
+        <tr>
+        	<td></td>
+        	<td >
+        		<button type="submit">Register</button>
+        		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        		<button type="reset">Cancel</button>
+        	</td>
+        </tr>
+	</table>
+</form>
+
+</body>
+
+</html>
